@@ -1,12 +1,18 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Home } from "../../components/pages/Home";
+import {  Todo } from "../../components/pages/Todo";
+import { Counter } from "../../components/pages/Counter";
+
 
 
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Todo/>,
+  },
+  {
+    path: "counter",
+    element: <Counter/>,
   },
   
 ]);
