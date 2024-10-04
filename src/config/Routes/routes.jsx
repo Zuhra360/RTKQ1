@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import {  Todo } from "../../components/pages/Todo";
-import { Counter } from "../../components/pages/Counter";
+import { TanStack } from "../../components/pages/tanStack";
+import { CartPage} from "../../components/pages/CartPage";
+import { UserPage } from "../../components/pages/UserPage";
 
 
 
@@ -8,11 +9,15 @@ import { Counter } from "../../components/pages/Counter";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Todo/>,
+    element: <TanStack/>,
   },
   {
-    path: "counter",
-    element: <Counter/>,
+    path: "cart",
+    element: < CartPage/>
   },
+  {
+    path: "users",
+    element: < UserPage/>
+  }
   
 ]);
